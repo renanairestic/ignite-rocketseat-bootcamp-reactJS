@@ -1,5 +1,5 @@
 # INICIANDO UM NOVO PROJETO REACT:
- - Roteiro do primeiro capitulo Bootcamp Ignite - Rocketseat
+ - Roteiro do primeiro capítulo Bootcamp Ignite - Rocketseat
  
  * Trilha React - 2021
 
@@ -22,7 +22,7 @@ ou
 ou
 > expo init nome-do-app
 
-## Instalação da primeira Dpendência:
+## Instalação da primeira Dendência:
 
 ### Biblioteca REACT:
 /** Comando executado no terminal **/
@@ -137,7 +137,7 @@ dist/bundle.js
 ### usar extensão jsx para os arquivos js (arquivos react com html)
 
 
-# Configurando WebPack [<>] (https://webpack.js.org/ 'site webpack')
+# Configurando [WebPack](https://webpack.js.org/ 'site webpack')
 
 Ele vai ensinar para aplicação como ela deve trata cada tipo de arquvios. Convetendo em arquivos entendivel.
 
