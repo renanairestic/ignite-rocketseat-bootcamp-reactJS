@@ -6,7 +6,7 @@
 # SUMÁRIO
 - [Introdução ao módulo](#introdução-ao-módulo)
 - [Configurando o Babel](#Configurando-o-Babel)
-- [Configurando webpack](#Configurando-WebPackhttpswebpackjsorgsite-webpack)
+- [Configurando Webpack](#Configurando-WebPack)
 - [Estrutura ReactJS](#Estrutura-ReactJS)
 - [Servindo HTML estático](#Servindo-HTML-estático)
 - [Webpack Dev Server](#Webpack-Dev-Server)
