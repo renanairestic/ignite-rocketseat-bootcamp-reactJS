@@ -3,6 +3,8 @@
  
  * Trilha React - 2021
 
+      Nesse Readme vou incluir minhas anotações e informações que achei necessárias.
+
 # SUMÁRIO
 - [Introdução ao módulo](#introdução-ao-módulo)
 - [Configurando o Babel](#Configurando-o-Babel)
