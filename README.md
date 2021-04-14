@@ -1,2 +1,3 @@
 # ignite-rocketseat
- Nesse diretório ficará incluido as práticas realizadas duranter o bootcampo da Rocketseat sobre ReactJS
+ Nesse repositório contem minhas práticas realizadas durante o bootcamp sobre ReactJS da Rocketseat (Ignire).
+ 
