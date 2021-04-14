@@ -79,7 +79,8 @@ ou
 
 Se estiver usando VScode utilize o modo de ciração/atalho digitando ! onde apresentará algumas opções, escolha html5
 
-# Configurando o Babel [] (https://babeljs.io/ 'Site do babel')
+# Configurando o Babel
+[Documentação](https://babeljs.io/ 'Site do babel')
 
 O babel é uma ferramenta que traduz de uma forma que seja mais fácil (entendivel o código). Converter o código para uma forma que os navegadores entenda melhor.
 
@@ -157,7 +158,8 @@ dist/bundle.js
 ### usar extensão jsx para os arquivos js (arquivos react com html)
 
 
-# Configurando [WebPack](https://webpack.js.org/ 'site webpack')
+# Configurando Webpack
+[WebPack Doc](https://webpack.js.org/ 'site webpack')
 
 Ele vai ensinar para aplicação como ela deve trata cada tipo de arquvios. Convetendo em arquivos entendivel.
 
