@@ -163,6 +163,7 @@ dist/bundle.js
 
 Ele vai ensinar para aplicação como ela deve trata cada tipo de arquvios. Convetendo em arquivos entendivel.
 
+
 > yarn add webpack webpack-cli -D
 
 ## Criando arquivo de configuração:
