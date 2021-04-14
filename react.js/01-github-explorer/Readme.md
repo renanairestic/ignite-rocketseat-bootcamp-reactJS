@@ -5,7 +5,7 @@
 
 # SUMÁRIO
 - [Introdução ao módulo](#introdução-ao-módulo)
-- [Configurando o Babel](#Configurando-o-Babelhttpsbabeljsio-Site-do-babel)
+- [Configurando o Babel](#Configurando-o-Babel)
 - [Configurando webpack](#Configurando-WebPackhttpswebpackjsorgsite-webpack)
 - [Estrutura ReactJS](#Estrutura-ReactJS)
 - [Servindo HTML estático](#Servindo-HTML-estático)
