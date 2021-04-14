@@ -3,6 +3,26 @@
  
  * Trilha React - 2021
 
+# SUMÁRIO
+- [Introdução ao módulo](#introdução-ao-módulo)
+- [Configurando o Babel](#Configurando-o-Babelhttpsbabeljsio-Site-do-babel)
+- [Configurando webpack](#Configurando-WebPackhttpswebpackjsorgsite-webpack)
+- [Estrutura ReactJS](#Estrutura-ReactJS)
+- [Servindo HTML estático](#Servindo-HTML-estático)
+- [Webpack Dev Server](#Webpack-Dev-Server)
+- [Utilizando source maps](#Utilizando-source-maps)
+- [Ambinete dev e Produção](#Ambiente-dev-e-produção)
+- [Importando arquivos CSS](#Importando-arquivos-css)
+- [Utilizando SASS](#Utilizando-SASS)
+- [Promeiro Componente React](#Primeiro-componente-React)
+- [Propriedades no React](#Propriedades-no-React)
+- [Estado de componente](#Estado-de-componente)
+- [Imutabilidade](#Imutabilidade)
+- [Fast refresh no webpack](#Fast-refresh-no-webpack)
+- [Estilização da listagem](#Estilização-da-listagem)
+- [Utilizando useEffect](#Utilizando-useEffect)
+- [Criando repostórios](#Criando-repostórios) 
+
  # Introdução ao módulo:
 
 1 - Criar o diretório (Pasta):
@@ -274,7 +294,7 @@ Retira a tag script.
    devtool:  'eval-source-map', 
    ...
 
-# Ambiente deve e produção
+# Ambiente dev e produção
 ## Em webpack.conf.js
    const ...
    const isDevelopment = process.env.NODE_ENV !== 'production'
