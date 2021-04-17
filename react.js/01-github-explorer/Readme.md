@@ -179,7 +179,7 @@ Ele vai ensinar para aplicação como ela deve trata cada tipo de arquvios. Conv
 * webpack.config.js (raiz)
 
 /** Adiciona dentro do arquivo criado  e deixando multiplataforma no sentido de leitura de diretório **/
-
+```
    import path = require('path')
 
    module.exports = {
@@ -202,34 +202,36 @@ Ele vai ensinar para aplicação como ela deve trata cada tipo de arquvios. Conv
       },
 
    };
-
+```
 > yarn babel-loader -D
 
 ## Criar arquivo chamado src/App.jsx
+```
    export function App(){
       return <h1> Hello World</h1>
    }
-
+```
 ## Alterando src/index.jsx
+```
    import React from 'react';
    import {App} from './App';
-
+```
    /** excluir demais conteúdo **/
 
 # Estrutura ReactJS
 
 ## No arquivo public/index.html
-
-> body
->     <div id='root'> </div>
-
+```
+ body
+     <div id='root'> </div>
+```
 ## No src/index.jsx
-
+```
    import { render } from 'react-dom';
    import { App } from './App';
 
    render(<h1>test</h1>, document.getElementById('roor'))
-
+```
 A cada alteração nesse momento é preciso executar o webpack
 
 > yarn webpack
@@ -273,6 +275,7 @@ Retira a tag script.
 > yarn add html-webpack-plugin -D
 
 ## No webpack.config.js
+```
    const path =require('path')
    const HtmlWebpackPlugin = require('html-webpack-plugin')
    ...
@@ -283,7 +286,7 @@ Retira a tag script.
       })
    ],
    ...
-
+```
    /** vai gerar uma novo arquivo dentro do dist **/
 
 # Webpack Dev Server
@@ -292,29 +295,33 @@ Retira a tag script.
 > yarn add webpack-dev-server -D
 
 ## Dentro de webpack.conf.js
+```
 ...
   devServer: {
       contentBase:path.resolve(__dirname, 'public'),
     },
-
+```
 # Utilizando source maps
 
 ## Em webpack.conf.js
+```
    ...
    mode: 'development',
    devtool:  'eval-source-map', 
    ...
-
+```
 # Ambiente dev e produção
 ## Em webpack.conf.js
+```
    const ...
    const isDevelopment = process.env.NODE_ENV !== 'production'
- 
+ ```
  Alterar mode,
+ ```
    mode: isDevelopment ? 'development : 'production',
    devetool: isDevelopment ? 'eval-source-map' : 'souce-map',
    ...
-
+```
 ### Configurando as alterações:
  - isDevelopment:
 
@@ -402,11 +409,11 @@ Sintaxe:
 Os parâmetros do useEffEct (qual função eu devo executar, quando eu vou executar)
 
 Se a dependência [] for vazio será executado uma única vez.
-
+```
 useEffect(() => {
 
 },[])
-
+```
 Note: Cuidado para não deixar sem o segundo parâmetro.
 O componente é executado por completo.
 
@@ -462,12 +469,16 @@ adicionando
 
 Dentro do webpack alterar em rules
 modificar a linha  
+```
 test: /\.(j|t)sx$/,
 
-E 
+```
 
+E 
+```
  resolve:{
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+```
 
 # Componentes com TypeScript
 
