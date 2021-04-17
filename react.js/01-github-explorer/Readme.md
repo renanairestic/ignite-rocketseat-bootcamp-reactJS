@@ -432,23 +432,23 @@ Iniciar o typescript
 Alterando configurações do arquivo gerado "tsconfig.json"
 
 Alterando para:
-{
-  "compilerOptions": {
-    "lib": ["dom","dom.iterable","esnext"],                                   
-    "allowJs": true,                             
-    "jsx": "react-jsx",                           
-    "noEmit": true,                              
-    "strict": true,                                 
-    "moduleResolution": "node",  
-    "resolveJsonModule": true,  
-    "isolatedModules": true,              
-    "allowSyntheticDefaultImports": true,        
-    "esModuleInterop": true,                        
-    "skipLibCheck": true,                           
-    "forceConsistentCasingInFileNames": true        
-  },
-  "incluede":["src"]
-}
+         {
+         "compilerOptions": {
+            "lib": ["dom","dom.iterable","esnext"],                                   
+            "allowJs": true,                             
+            "jsx": "react-jsx",                           
+            "noEmit": true,                              
+            "strict": true,                                 
+            "moduleResolution": "node",  
+            "resolveJsonModule": true,  
+            "isolatedModules": true,              
+            "allowSyntheticDefaultImports": true,        
+            "esModuleInterop": true,                        
+            "skipLibCheck": true,                           
+            "forceConsistentCasingInFileNames": true        
+         },
+         "incluede":["src"]
+         }
 
 Adicionando:
 
