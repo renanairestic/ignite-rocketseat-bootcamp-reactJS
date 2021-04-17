@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["dom","dom.iterable","esnext"],                                   
+    "allowJs": true,      // Vai aceitar arquivos tanto typeScript como JavaScript                       
+    "jsx": "react-jsx",    // Informa que está utilizando JSX                       
+    "noEmit": true,                              
+    "strict": true,                                 
+    "moduleResolution": "node",  
+    "resolveJsonModule": true, // Adiciona possibilidade de gerar arquivos JSON  
+    "isolatedModules": true,              
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true        
+  },
+  "incluede":["src"] // Sinaliza onde o código da aplização estará
+}

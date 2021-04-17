@@ -6,13 +6,13 @@ const isDevelopment = process.env.NODE.ENV !== 'production'
 module.exports ={
     mode: isDevelopment ? 'development': 'production', //acelera render do webpack
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
-    entry: path.resolve(__dirname,'src', 'index.jsx'), //compatibilidade formatos de diretório windows e linux
+    entry: path.resolve(__dirname,'src', 'index.tsx'), //compatibilidade formatos de diretório windows e linux
     output:{
         path:path.resolve(__dirname, 'dist'),
         filename:'bundle.js'
     },
     resolve:{
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     //deveServer: funcionalidade para recarregar automaticamente sem precisar ininiciar o webpack
     devServer: {
@@ -28,7 +28,7 @@ module.exports ={
     module: {
         rules:[
             {
-                test: /\.jsx$/,
+                test: /\.(j|t)sx$/,
                 exclude: /node_modules/,
                 use: {
                         loader: 'babel-loader',

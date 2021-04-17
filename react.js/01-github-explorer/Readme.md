@@ -420,6 +420,69 @@ useEffect(() => {
 Note: Cuidado para não deixar sem o segundo parâmetro.
 O componente é executado por completo.
 
-# Criando repostórios
+# Listando repostórios
 
 map: toda vez que se utiliza map é necessário ter uma key.
+
+# Fundamentos do TypeScript
+
+SuperSet
+
+TypeScript permite adicionar tipagem ou formato 
+
+# TypeScript no ReactJS
+Instalação do TypeScript
+
+> yarn add typescript -D
+
+Iniciar o typescript
+
+> yarn tsc --init
+
+Alterando configurações do arquivo gerado "tsconfig.json"
+
+Alterando para:
+{
+  "compilerOptions": {
+    "lib": ["dom","dom.iterable","esnext"],                                   
+    "allowJs": true,                             
+    "jsx": "react-jsx",                           
+    "noEmit": true,                              
+    "strict": true,                                 
+    "moduleResolution": "node",  
+    "resolveJsonModule": true,  
+    "isolatedModules": true,              
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true        
+  },
+  "incluede":["src"]
+}
+
+Adicionando:
+
+> yarn add @babel/preset-typescript -D
+
+Alterar arquivo babel.config.js
+adicionando 
+- '@babel/present-typescript'
+
+Dentro do webpack alterar em rules
+modificar a linha  
+test: /\.(j|t)sx$/,
+
+E 
+
+ resolve:{
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+
+# Componentes com TypeScript
+
+Alterando tipos de arquvios
+
+Mudando extensão do App.jsx para App.tsx
+
+No processp de tipagem não é necessário representar todos os tipos e elementos, apenas os que serão usados. No caso do exemplo desta prática o repositório possui uma descrição com vários componentes, porém só repreento o que será usado.
+
+# Utilizando React DevTools
