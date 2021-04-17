@@ -432,7 +432,7 @@ Iniciar o typescript
 Alterando configurações do arquivo gerado "tsconfig.json"
 
 Alterando para:
-         {
+   ´´´{
          "compilerOptions": {
             "lib": ["dom","dom.iterable","esnext"],                                   
             "allowJs": true,                             
@@ -449,6 +449,7 @@ Alterando para:
          },
          "incluede":["src"]
          }
+         ´´´
 
 Adicionando:
 
