@@ -5,6 +5,8 @@
 
       Nesse Readme vou incluir minhas anotações e informações que achei necessárias.
 
+      Finalizado os estudos práticos em 17.04.2021 deste capítulo
+
 # SUMÁRIO
 - [Introdução ao módulo](#introdução-ao-módulo)
 - [Configurando o Babel](#Configurando-o-Babel)
@@ -23,7 +25,11 @@
 - [Fast refresh no webpack](#Fast-refresh-no-webpack)
 - [Estilização da listagem](#Estilização-da-listagem)
 - [Utilizando useEffect](#Utilizando-useEffect)
-- [Criando repostórios](#Criando-repostórios) 
+- [Listando repostórios](#Criando-repostórios) 
+- [Fundamentos do TypeScript](#Fundamentos-do-TypeScript)
+- [TypeScript no ReactJS](#TypeScript-no-ReactJS)
+- [Componentes com TypeScript](#Componentes-com-TypeScript)
+
 
  # Introdução ao módulo:
 
@@ -329,23 +335,7 @@ Para funcionar no Windows:
 
    /** a partir dessas configurações já é possível executar o projeto com o comando "yarn dev" **/
 
-# Importando arquivos CSS
-Criação da pasta styles/global.css
-
-## Em webpack.config.js
-Em rules: ...
-
-{
-   test: /\.scss$/,
-   exclude: /node_modules/,
-   use: ['style-loader', 'css-loader', 'sass-loader'],
-}
-
-## Instação:
-> yarn add style-loader css-loader -D
-São utilizados em conjunto
-
-# Utilizando SASS
+# Importando arquivoFundamentos do TypeScript
 Pré processador que adicionar algumas funcionalidade a mais. 
 > yarn add sass-loader -D
 
@@ -485,4 +475,4 @@ Mudando extensão do App.jsx para App.tsx
 
 No processp de tipagem não é necessário representar todos os tipos e elementos, apenas os que serão usados. No caso do exemplo desta prática o repositório possui uma descrição com vários componentes, porém só repreento o que será usado.
 
-# Utilizando React DevTools
+
