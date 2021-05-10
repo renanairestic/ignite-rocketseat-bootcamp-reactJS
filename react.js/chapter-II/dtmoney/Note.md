@@ -48,6 +48,22 @@ Prepara o ambiete React, pré configurado.
 
   > yarn add axios
 
+  ## React Modal
+
+  [Acesso a documentação no Github](https://github.com/reactjs/react-modal)
+
+  > yarn add react-modal 
+
+  Caso apresente erro no types executar
+
+  > yarn add @types/react-modal -D   
+
+  ## polished   
+  Para manipulação de estilo dentro do JavaScript.
+  [Acesso a documentação](https://polished.js.org/)
+  > yarn add polished
+
+
 
   ## Boas Práticas / Dicas
   
@@ -79,9 +95,95 @@ Prepara o ambiete React, pré configurado.
   display:block;
   ```
 
+  ## Repassando função entre components
+
+  Dica para utilizar funções criando novas **propriedades**.
+
+  1 - Cria uma interface no componente que vai receber a função. Ex.
+    
+  ```ts
+  interface HeaderProps{
+  onOpenNewTransactionModal: () => void;
+  }
+```
+2 - Passa como parâmetro na mesma. Ex.
+```js
+{  onOpenNewTransactionModal }: HeaderProps
+```
+3 - Insere o tipo de **props** no componente. Ex.
+```html
+  <button type="button" onClick={onOpenNewTransactionModal}>
+          Nova transação
+        </button>
+```
+Note: **onOpenNewTrasactionModal** no **onClick**.
+
+4- Dessa forma acabo criando uma propriedade utilizável.
+
+```html
+<Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/> 
+```
 
 
 
 
 
+
+
+
+
+  ## Props - com Styled Components
+  [Using custom props](https://styled-components.com/docs/api#using-custom-props)
+
+  Caso queira criar novas propriedades posso usar a componentização do Style Components.
+  1 - Cria interface
+  ```ts
+  interface RadioBoxProps{
+  isActive:boolean;
+}
+  ```
+
+  2 - Sinaliza a tipagem no Component
+
+
+```ts 
+  export const RadioBox =styled.button<RadioBoxProps>`
+```
+Note: <RadioBoxProps>
+
+3 - utilize o component
+```ts 
+  <RadioBox />
+```
+## Context
+
+Usar quando necessário compartilhar estado entre vários components da aplicação.
+
+[Veja mais em React - Context](https://pt-br.reactjs.org/docs/context.html)
+
+## Type - ignorando parte da interface criada
+
+Caso tenha necessidade de ignorar alguns elementos de uma interface existem duas formas. 
+### Omit
+Vai omitir
+```ts
+type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>;
+```
+### Pick
+Vai pegar apenas os selecionados.
+```ts
+type TrasactionInput = Pick<Transaction, 'title' | 'amount' | 'type' | 'category' >;
+```
+
+## Editando um vetor (conceito de imutabilidade)
+
+O conceito de imutabilidade sobre vetores indica que não deve alterar, pensando nisso para realizar uma edição na lista é recomendado realizar uma cópia do antigo e adicionar o novo.
+
+```ts
+setTransations([
+  ...transactions,
+  transaction
+])
+```
+Note **...transactions**
 
